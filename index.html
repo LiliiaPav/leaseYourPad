@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Global travelers</title>
+</head>
+<body>
+    <header>
+        <h1>Lease your pad</h1>
+        <h2>Turn your home, trailer, tent or igloo into some fast cash! When you're not there let someone else be.</h2>
+
+    </header>
+    <main>
+        <article class="mainArticle">
+            <h2>Stay here</h2>
+            <img src="images/home.jpg" alt="picture of a white house">
+            <p>The premise is simple, you have extra space - we connect you with some who wants to sty there.</p>
+        </article>
+
+        <section id="listings">
+            <h2 class="one">Current Listings</h2>
+            <article>
+                <img src="images/vw.jpg" alt="bus near a beach">
+                <h3><span class="icon bus"></span>VW Bus</h3>
+                <p>The premise is simple, you have space - we connect you, <a href="">more></a></p>
+            </article>
+
+            <article>
+                <img src="images/airstream.jpg" alt="Airstream">
+                <h3><span class="icon bus"></span>Airstream</h3>
+                <p>The premise is simple, you have space - we connect you, <a href="">more></a></p>
+            </article>
+
+            <article>
+                <img src="images/home3.jpg" alt="white house">
+                
+                <h3><span class="icon house"></span>House</h3>
+                <p>The premise is simple, you have space - we connect you, <a href="">more></a></p>
+            </article>
+
+            <article>
+                <img src="images/teepee.jpg" alt="Teepees">
+                <h3><span class="icon teepee"></span>Teepees</h3>
+                <p>The premise is simple, you have space - we connect you, <a href="">more></a></p>
+            </article>
+
+            <article>
+                <img src="images/treehouse.jpg" alt="Treehouse">
+                <h3><span class="icon house"></span>Treehouse</h3>
+                <p>The premise is simple, you have space - we connect you, <a href="">more></a></p>
+            </article>
+
+            <article>
+                <img src="images/home2.jpg" alt="Jungle House">
+                <h3><span class="icon house"></span>Jungle House</h3>
+                <p>The premise is simple, you have space - we connect you, <a href="">more></a></p>
+            </article>
+
+        </section>
+
+        <section id="information">
+            <h2>Need more information?</h2>
+            <p>Thanks for stopping by, if you have questions, please get in touch with us:</p>
+
+            <form action="#" method="post" id="mainContent" enctype="text/plain">
+                <fieldset class="basics">
+                    <legend>The basics</legend>
+                    <ul>
+                        <li>
+                            <label for="fullName">Your name: </label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </li>
+                        <li>
+                            <label for="email">Your email: </label>
+                            <input type="email" id="email" name="email" required >
+                        </li>
+                        <li>
+                            <label for="phone">Your phone number: </label>
+                            <input type="tel" id="phone" name="phone" required >
+                        </li>
+                        <li>
+                            <label for="msg">Your question or message:</label>
+                            <textarea name="msg" id="msg" rows="10"></textarea>
+                        </li>
+                    </ul>
+            </fieldset>
+    
+            <fieldset class="rent">
+                <legend>Ready to rent:</legend>
+                <p>Let us known a little bit about your pad.</p>
+
+                <section id="location">
+                    <h3>Location:</h3>
+                    <ul>
+                        <li class="address">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" required>
+                        </li>
+                        <li class="city">
+                            <label for="city">City </label>
+                            <input type="text" id="city" name="city" required>
+                        </li>
+                        <li class="state">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" required>
+                        </li>
+                        <li class="zip">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name="zip" required>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>What is your pad like?</h3>
+                    <h4>Pad type</h4>
+                    <ul class="checkbox">
+                        <li>
+                            <input type="checkbox" name="padType" id="home">
+                            <label for="home">Home</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="padType" id="treehouse">
+                            <label for="treehouse">Treehouse</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="padType" id="igloo">
+                            <label for="igloo">Igloo</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="padType" id="teepee">
+                            <label for="teepee">Teepee</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="padType" id="trailer">
+                            <label for="trailer">Trailer</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="padType" id="van">
+                            <label for="van">Van</label>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" name="padType" id="other">
+                            <label for="other">Other</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="description">
+                    <section id="dropdowns">
+                    <h4>Room Type</h4>
+                    <select name="roomType" id="roomType">
+                        <option value="entire" selected>Entire home/apt</option>
+                        <option value="part">Room</option>
+                    </select>
+                    
+                    <h4>Bedrooms</h4>
+                    <select name="numBedrooms" id="numBedrooms">
+                        <option value="one" selected>1 Bedroom</option>
+                        <option value="two">2 Bedrooms</option>
+                        <option value="three">3 Bedrooms</option>
+                        <option value="four">4 Bedrooms</option>
+                        <option value="five">5 Bedrooms</option>
+                        <option value="more">6 or more</option>
+                    </select>
+                    
+                    <h4>Bathroom</h4>
+                    <select name="numBathrooms" id="numBathrooms" >
+                        <option value="1" selected>1 Bathroom</option>
+                        <option value="1.5" >1.5 Bathroom</option>
+                        <option value="2">2 Bathroom</option>
+                        <option value="3">3 Bathroom</option>
+                        <option value="more">4 or more</option>
+                    </select>
+
+                </section>
+                <section id="radioButtons">
+                        <h4>Other amenities</h4>
+                        <ul class="radioList">
+                            <li>
+                                <input type="radio" id="pool" value="pool" name="amenities">
+                                <label for="pool">Pool</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="bikes" value="bikes" name="amenities">
+                                <label for="bikes">Bikes</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="tenis" value="tenis" name="amenities">
+                                <label for="tenis">Tennis courts</label>
+                            </li>
+        
+                            <li>
+                                <input type="radio" id="toys" value="toys" name="amenities">
+                                <label for="toys">Kids Toys</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="trails" value="trails" name="amenities">
+                                <label for="trails">Walking trails</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="pets" value="pets" name="amenities">
+                                <label for="pets">Pet friendly</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="hiking" value="hiking" name="amenities">
+                                <label for="hiking">Hiking</label>
+                            </li>
+        
+                            
+                        </ul>
+                    </section>
+
+                </section>
+                <input type="submit" id="submitsm" class="button small" value="Sing me up!">
+                
+            </fieldset>
+      
+         
+        </form>
+    </section> 
+        <input type="submit" id="submitbig" class="button big" value="Sing me up!">
+
+        
+
+    </main>
+
+    <footer>
+        <p>Copyright 2023, all rights reserved</p>
+    </footer>
+
+</body>
+</html>
